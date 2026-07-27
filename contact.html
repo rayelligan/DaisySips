@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Daisy Sips - Get in touch for orders, partnerships, and questions.">
+    <meta name="theme-color" content="#E74C9F">
+    <title>Contact | Daisy Sips</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="navbar" role="banner">
+    <div class="logo">
+        <img src="images/logo.png" alt="Daisy Sips specialty drinks logo" loading="lazy">
+    </div>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        ☰
+    </button>
+</header>
+
+<main id="main-content">
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p class="tagline">We'd love to hear from you</p>
+    </section>
+
+    <section class="contact-details">
+        <h2>Get in touch</h2>
+        <p>Email: <a href="mailto:hello@daisysips.example">hello@daisysips.example</a></p>
+        <p>Phone: (555) 555-0123</p>
+
+        <h3>Send us a message</h3>
+        <!-- Simple client-side form (needs a backend or mail service to submit reliably) -->
+        <form action="mailto:hello@daisysips.example" method="post" enctype="text/plain">
+            <label for="name">Name</label><br>
+            <input id="name" name="name" type="text" required><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" required><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea><br>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <h2>Daisy Sips 🌼</h2>
+    <p>Specialty drinks made with love.</p>
+    <nav aria-label="Social media links">
+        <div class="socials">
+            <a href="https://instagram.com/daisysips" aria-label="Visit Daisy Sips on Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://facebook.com/daisysips" aria-label="Visit Daisy Sips on Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+    </nav>
+    <p>© 2026 Daisy Sips. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
