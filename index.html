@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Daisy Sips - Specialty drinks crafted to make every sip feel like a moment worth savoring.">
+    <meta name="theme-color" content="#E74C9F">
+    <meta property="og:title" content="Daisy Sips | Specialty Drinks">
+    <meta property="og:description" content="Daisy Sips - Specialty drinks crafted to make every sip feel like a moment worth savoring.">
+    <meta property="og:image" content="images/logo.png">
     <title>Daisy Sips | Specialty Drinks</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #E74C9F;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
 </head>
 
 <body>
 
+<!-- Skip Link for Accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- Navigation -->
 <header class="navbar" role="banner">
     <div class="logo">
-        <img src="images/logo.png" alt="Daisy Sips Logo - Home">
+        <img src="images/logo.png" alt="Daisy Sips specialty drinks logo" loading="lazy">
     </div>
 
     <nav aria-label="Main navigation">
@@ -42,9 +64,9 @@
             Daisy Sips
         </h1>
 
-        <h2>
+        <p class="tagline">
             Make Every Sip Feel Like a Moment Worth Savoring
-        </h2>
+        </p>
 
         <p>
             Specialty drinks handcrafted with fresh ingredients,
@@ -79,65 +101,37 @@
 
 
 <!-- Featured Drinks -->
+<section class="featured" id="main-content" aria-label="Featured drinks">
 
-<section class="featured" aria-label="Featured drinks">
+    <h2>
+        Featured Drinks
+    </h2>
 
-<h2>
-Featured Drinks
-</h2>
+    <ul class="drink-grid">
+        <li class="drink-card">
+            <img src="images/drinks/coconut-matcha.jpg" alt="Coconut Matcha - smooth blend of premium matcha and creamy coconut" loading="lazy">
+            <h3>Coconut Matcha</h3>
+            <p>
+                A smooth blend of premium matcha and creamy coconut.
+            </p>
+        </li>
 
+        <li class="drink-card">
+            <img src="images/drinks/specialty.jpg" alt="Signature Specials - unique seasonal creations" loading="lazy">
+            <h3>Signature Specials</h3>
+            <p>
+                Unique seasonal creations made with fresh flavors.
+            </p>
+        </li>
 
-<div class="drink-grid" role="list">
-
-
-<article class="drink-card" role="listitem">
-
-<img src="images/drinks/coconut-matcha.jpg" alt="Coconut Matcha drink">
-
-<h3>
-Coconut Matcha
-</h3>
-
-<p>
-A smooth blend of premium matcha and creamy coconut.
-</p>
-
-</article>
-
-
-
-<article class="drink-card" role="listitem">
-
-<img src="images/drinks/specialty.jpg" alt="Signature specialty drink">
-
-<h3>
-Signature Specials
-</h3>
-
-<p>
-Unique seasonal creations made with fresh flavors.
-</p>
-
-</article>
-
-
-
-<article class="drink-card" role="listitem">
-
-<img src="images/drinks/coffee.jpg" alt="Coffee drink">
-
-<h3>
-Coffee Favorites
-</h3>
-
-<p>
-Classic favorites with a Daisy Sips twist.
-</p>
-
-</article>
-
-
-</div>
+        <li class="drink-card">
+            <img src="images/drinks/coffee.jpg" alt="Coffee Favorites - classic drinks with a Daisy Sips twist" loading="lazy">
+            <h3>Coffee Favorites</h3>
+            <p>
+                Classic favorites with a Daisy Sips twist.
+            </p>
+        </li>
+    </ul>
 
 </section>
 
@@ -145,50 +139,29 @@ Classic favorites with a Daisy Sips twist.
 
 
 <!-- House Favorites -->
-
 <section class="favorites" aria-label="House favorites">
 
-<h2>
-House Favorites
-</h2>
+    <h2>
+        House Favorites
+    </h2>
 
+    <ul class="favorite-container">
+        <li class="favorite-card">
+            <img src="images/drinks/favorite.jpg" alt="Customer Favorite - loved by the Daisy Sips community" loading="lazy">
+            <h3>Customer Favorite</h3>
+            <p>
+                A drink loved by the Daisy Sips community.
+            </p>
+        </li>
 
-<div class="favorite-container" role="list">
-
-
-<article class="favorite-card" role="listitem">
-
-<img src="images/drinks/favorite.jpg" alt="Customer favorite drink">
-
-<h3>
-Customer Favorite
-</h3>
-
-<p>
-A drink loved by the Daisy Sips community.
-</p>
-
-</article>
-
-
-
-<article class="favorite-card" role="listitem">
-
-<img src="images/drinks/matcha.jpg" alt="Premium Matcha drink">
-
-<h3>
-Premium Matcha
-</h3>
-
-<p>
-Rich, creamy, and handcrafted.
-</p>
-
-</article>
-
-
-
-</div>
+        <li class="favorite-card">
+            <img src="images/drinks/matcha.jpg" alt="Premium Matcha - rich, creamy, and handcrafted" loading="lazy">
+            <h3>Premium Matcha</h3>
+            <p>
+                Rich, creamy, and handcrafted.
+            </p>
+        </li>
+    </ul>
 
 </section>
 
@@ -196,22 +169,19 @@ Rich, creamy, and handcrafted.
 
 
 <!-- Seasonal Specials -->
-
 <section class="seasonal" aria-label="Seasonal specials">
 
-<h2>
-Seasonal Specials
-</h2>
+    <h2>
+        Seasonal Specials
+    </h2>
 
+    <p>
+        Discover limited-time drinks inspired by every season.
+    </p>
 
-<p>
-Discover limited-time drinks inspired by every season.
-</p>
-
-
-<a href="menu.html" class="button">
-View Specials
-</a>
+    <a href="menu.html" class="button">
+        View Specials
+    </a>
 
 </section>
 
@@ -219,87 +189,67 @@ View Specials
 
 <!-- Seasonal Menus -->
 <section class="menus" aria-label="Seasonal menus">
-  <h2>
-    Seasonal Menus
-  </h2>
+    <h2>
+        Seasonal Menus
+    </h2>
 
-  <div class="menu-list">
-    <details open>
-      <summary>Winter Menu</summary>
-      <div class="menu-items">
-        <img src="images/menus/daisy-sips-menu.jpg" alt="Daisy Sips Winter Menu" style="max-width: 100%; height: auto; margin: 20px 0;">
-      </div>
-    </details>
+    <div class="menu-list">
+        <details open>
+            <summary>Winter Menu</summary>
+            <div class="menu-items">
+                <img src="images/menus/daisy-sips-menu.jpg" alt="Daisy Sips Winter Menu" style="max-width: 100%; height: auto; margin: 20px 0;" loading="lazy">
+            </div>
+        </details>
 
-    <details>
-      <summary>Summer Menu (Coming Soon)</summary>
-      <div class="menu-items">
-        <p>Summer menu coming soon! Check back for our delicious summer drink specials.</p>
-        <div class="placeholder-menu" style="max-width: 100%; height: 400px; background: linear-gradient(135deg, #FFD4E5 0%, #FFF4E6 100%); border: 2px dashed #E74C9F; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-          Summer Menu Image - To be added
-        </div>
-      </div>
-    </details>
-  </div>
+        <details>
+            <summary>Summer Menu (Coming Soon)</summary>
+            <div class="menu-items">
+                <p>Summer menu coming soon! Check back for our delicious summer drink specials.</p>
+                <div class="placeholder-menu" style="max-width: 100%; height: 400px; background: linear-gradient(135deg, #FFD4E5 0%, #FFF4E6 100%); border: 2px dashed #E74C9F; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #999;">
+                    Summer Menu Image - To be added
+                </div>
+            </div>
+        </details>
+    </div>
 </section>
 
 
 
 <!-- Testimonials -->
-
 <section class="reviews" aria-label="Customer testimonials">
 
-<h2>
-What Customers Say
-</h2>
+    <h2>
+        What Customers Say
+    </h2>
 
+    <ul class="review-grid">
+        <li class="review">
+            <p>
+                "Beautiful drinks, amazing flavors, and such a welcoming atmosphere!"
+            </p>
+            <span aria-label="5 out of 5 stars">
+                ★★★★★
+            </span>
+        </li>
 
-<div class="review-grid" role="list">
+        <li class="review">
+            <p>
+                "Daisy Sips makes every drink feel special."
+            </p>
+            <span aria-label="5 out of 5 stars">
+                ★★★★★
+            </span>
+        </li>
 
-
-<article class="review" role="listitem">
-
-<p>
-"Beautiful drinks, amazing flavors, and such a welcoming atmosphere!"
-</p>
-
-<span aria-label="5 out of 5 stars">
-★★★★★
-</span>
-
-</article>
-
-
-
-<article class="review" role="listitem">
-
-<p>
-"Daisy Sips makes every drink feel special."
-</p>
-
-<span aria-label="5 out of 5 stars">
-★★★★★
-</span>
-
-</article>
-
-
-
-<article class="review" role="listitem">
-
-<p>
-"My new favorite drink spot!"
-</p>
-
-<span aria-label="5 out of 5 stars">
-★★★★★
-</span>
-
-</article>
-
-
-</div>
-
+        <li class="review">
+            <p>
+                "My new favorite drink spot!"
+            </p>
+            <span aria-label="5 out of 5 stars">
+                ★★★★★
+            </span>
+        </li>
+    </ul>
 
 </section>
 
@@ -307,31 +257,30 @@ What Customers Say
 
 
 <!-- Instagram -->
-
 <section class="instagram" aria-label="Daisy Sips gallery on Instagram">
 
-<h2>
-Follow Daisy Sips
-</h2>
+    <h2>
+        Follow Daisy Sips
+    </h2>
 
-<p>
-Share your favorite drinks with us!
-</p>
+    <p>
+        Share your favorite drinks with us!
+    </p>
 
-
-<div class="instagram-grid" role="list">
-
-<img src="images/gallery/photo1.jpg" alt="Daisy Sips Instagram gallery photo 1" role="listitem">
-
-<img src="images/gallery/photo2.jpg" alt="Daisy Sips Instagram gallery photo 2" role="listitem">
-
-<img src="images/gallery/photo3.jpg" alt="Daisy Sips Instagram gallery photo 3" role="listitem">
-
-<img src="images/gallery/photo4.jpg" alt="Daisy Sips Instagram gallery photo 4" role="listitem">
-
-
-</div>
-
+    <ul class="instagram-grid">
+        <li>
+            <img src="images/gallery/photo1.jpg" alt="Daisy Sips specialty drink from Instagram" loading="lazy">
+        </li>
+        <li>
+            <img src="images/gallery/photo2.jpg" alt="Daisy Sips customer moment from Instagram" loading="lazy">
+        </li>
+        <li>
+            <img src="images/gallery/photo3.jpg" alt="Daisy Sips drink preparation from Instagram" loading="lazy">
+        </li>
+        <li>
+            <img src="images/gallery/photo4.jpg" alt="Daisy Sips beverage showcase from Instagram" loading="lazy">
+        </li>
+    </ul>
 
 </section>
 
@@ -339,36 +288,31 @@ Share your favorite drinks with us!
 
 
 <!-- Footer -->
-
 <footer role="contentinfo">
 
-<h2>
-Daisy Sips 🌼
-</h2>
+    <h2>
+        Daisy Sips 🌼
+    </h2>
 
-<p>
-Specialty drinks made with love.
-</p>
+    <p>
+        Specialty drinks made with love.
+    </p>
 
+    <nav aria-label="Social media links">
+        <div class="socials">
+            <a href="https://instagram.com/daisysips" aria-label="Visit Daisy Sips on Instagram" target="_blank" rel="noopener noreferrer">
+                Instagram
+            </a>
 
-<nav aria-label="Social media links">
-    <div class="socials">
+            <a href="https://facebook.com/daisysips" aria-label="Visit Daisy Sips on Facebook" target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+        </div>
+    </nav>
 
-        <a href="#" aria-label="Visit Daisy Sips on Instagram">
-            Instagram
-        </a>
-
-        <a href="#" aria-label="Visit Daisy Sips on Facebook">
-            Facebook
-        </a>
-
-    </div>
-</nav>
-
-<p>
-© 2026 Daisy Sips. All Rights Reserved.
-</p>
-
+    <p>
+        © 2026 Daisy Sips. All Rights Reserved.
+    </p>
 
 </footer>
 
