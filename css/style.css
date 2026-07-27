@@ -310,9 +310,23 @@ nav a {
   transition: color 0.2s;
 }
 
+/* Hover + current-page styling */
 nav a:hover,
 nav a[aria-current="page"] {
   color: #E74C9F;
+}
+
+/* Stronger visual for the active page link */
+nav a[aria-current="page"] {
+  font-weight: 700;
+  border-bottom: 2px solid #E74C9F;
+  padding-bottom: 2px;
+}
+
+/* Focus-visible outline for keyboard users */
+nav a:focus-visible {
+  outline: 3px solid rgba(231,76,159,0.15);
+  outline-offset: 3px;
 }
 
 .menu-toggle {
@@ -367,6 +381,7 @@ footer p {
     display: block;
   }
 
+  /* Hide the nav by default on small screens. When the nav element has the 'active' class, it becomes visible. */
   nav {
     display: none;
     flex-direction: column;
