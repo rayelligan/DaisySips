@@ -92,3 +92,319 @@ img {
   height: auto;
   display: block;
 }
+
+/* Menu Content Styles */
+.menu-content {
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+  font-size: 1.8rem;
+  color: #E74C9F;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #E74C9F;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  color: #E74C9F;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.menu-item p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.menu-image-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.menu-image-section h2 {
+  color: #E74C9F;
+  margin-bottom: 1rem;
+}
+
+/* Featured/Drink Grid */
+.drink-grid,
+.favorite-container,
+.review-grid,
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.drink-card,
+.favorite-card,
+.review {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.drink-card:hover,
+.favorite-card:hover {
+  transform: translateY(-5px);
+}
+
+.drink-card img,
+.favorite-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.drink-card h3,
+.favorite-card h3 {
+  padding: 1rem 1rem 0.5rem;
+  margin: 0;
+  color: #E74C9F;
+}
+
+.drink-card p,
+.favorite-card p {
+  padding: 0 1rem 1rem;
+  margin: 0;
+  color: #555;
+}
+
+.review {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.review p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Welcome section */
+.welcome {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome h2 {
+  color: #E74C9F;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Featured section */
+.featured h2,
+.favorites h2,
+.seasonal h2,
+.reviews h2,
+.instagram h2 {
+  color: #E74C9F;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.seasonal,
+.instagram {
+  text-align: center;
+}
+
+.seasonal p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Menus section */
+.menus {
+  padding: 2rem;
+}
+
+.menus h2 {
+  color: #E74C9F;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.menu-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu-list details {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-list summary {
+  padding: 1rem;
+  background: linear-gradient(135deg, #FFD4E5 0%, #FFF4E6 100%);
+  cursor: pointer;
+  font-weight: 600;
+  color: #E74C9F;
+}
+
+.menu-list summary:hover {
+  background: linear-gradient(135deg, #FFE0EC 0%, #FFF9F0 100%);
+}
+
+.menu-items {
+  padding: 1.5rem;
+  background: #fff;
+}
+
+.placeholder-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive Navigation */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #E74C9F;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: rgba(255,255,255,0.8);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+}
+
+footer h2 {
+  color: #E74C9F;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.socials a {
+  color: #E74C9F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #d63a8a;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  header.navbar {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+    min-height: 40vh;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .drink-grid,
+  .favorite-container,
+  .review-grid,
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
