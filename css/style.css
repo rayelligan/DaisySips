@@ -251,6 +251,8 @@ img {
 /* Menus section */
 .menus {
   padding: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .menus h2 {
@@ -263,13 +265,17 @@ img {
 .menu-list {
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .menu-list details {
   margin-bottom: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
 }
 
 .menu-list summary {
@@ -287,6 +293,7 @@ img {
 .menu-items {
   padding: 1.5rem;
   background: #fff;
+  border-top: 1px solid #ddd;
 }
 
 .placeholder-menu {
@@ -392,6 +399,7 @@ footer p {
     background: rgba(255,255,255,0.95);
     padding: 1rem;
     gap: 0.5rem;
+    z-index: 10;
   }
 
   nav.active {
@@ -421,5 +429,14 @@ footer p {
 
   .menu-items-grid {
     grid-template-columns: 1fr;
+  }
+
+  .menu-list details {
+    overflow: visible;
+  }
+
+  .menu-items {
+    position: relative;
+    z-index: 5;
   }
 }
